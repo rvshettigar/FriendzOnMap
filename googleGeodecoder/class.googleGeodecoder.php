@@ -46,7 +46,7 @@
 			}
 			$address = urlencode($location['name']);
 			$loc_id = $location['id'];
-			$dbObj = new handleDB('root','vinuuscuniv');
+			$dbObj = new handleDB('tunnel.pagodabox.com:3306','kandace','iKvVqxny');
 			$result = $dbObj -> checkAddress('geocoded_address', $location);
 			if ($result){
 				return array('lat' => $result['lat'], 'lng' => $result['lng']);

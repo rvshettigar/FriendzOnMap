@@ -2,8 +2,8 @@
 require 'fb-phpsdk/facebook.php';
 // Creating the facebook object using appid and app secret
 $facebook = new Facebook(array(
-  'appId'  => '487490984599920',
-  'secret' => 'cc2064e358eb3c34f3e7382fa0548a6e',
+  'appId'  => '444724602218418',
+  'secret' => 'ace7aff8abf062c50b888e47c770cdb7',
 ));
 
 $user = $facebook -> getUser();

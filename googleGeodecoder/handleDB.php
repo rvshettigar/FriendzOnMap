@@ -6,7 +6,7 @@ class handleDB{
 	 */
 	private $dbCon;
 
-	private $database = 'friendzonmap';
+	private $database = 'friendzDB';
 
 	/*
 	* Constructor
