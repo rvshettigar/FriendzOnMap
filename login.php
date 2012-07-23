@@ -40,10 +40,10 @@ require_once 'fb-phpsdk/facebook.php';
   <div class="content">
     
     <?php if ($user){ ?> 
-    		<?php echo $_SERVER['HTTP_HOST']; ?>  
+    		<?php //echo $_SERVER['HTTP_HOST']; ?>  
         
         <script type="text/javascript">
-          window.location = 'http://' + <?php echo $_SERVER['HTTP_HOST']; ?> +'/main.php';//"http://friendz.con:5000/fbfomdev/main.php";
+          window.location = 'http://<?php echo $_SERVER["HTTP_HOST"];?>/main.php';//"http://friendz.con:5000/fbfomdev/main.php";
         </script>
 
     <?php  }else{ ?>

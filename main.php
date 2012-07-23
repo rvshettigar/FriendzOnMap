@@ -215,7 +215,7 @@ require_once 'fb-phpsdk/facebook.php';
       <?php }else{ ?>
         
         <script type="text/javascript">
-          window.location = 'http://' + <?php echo $_SERVER['HTTP_HOST']; ?> +'/login.php';
+          window.location = 'http://<?php echo $_SERVER["HTTP_HOST"]; ?>/login.php';
         </script> 
         <p> </p>
       <?php } ?> 
