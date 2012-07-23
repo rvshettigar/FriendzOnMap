@@ -210,7 +210,7 @@ require_once 'fb-phpsdk/facebook.php';
 
       <script type="text/javascript">
           addMarker(<?php echo $currentCoord['lat']; ?>,<?php echo $currentCoord['lng']; ?>);
-          $(document).ready(loadMarkers());
+          //$(document).ready(loadMarkers());
       </script>
 
       <?php }else{ ?>
