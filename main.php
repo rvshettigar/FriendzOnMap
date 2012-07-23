@@ -5,10 +5,10 @@ require 'header.php';
 require_once 'fb-phpsdk/facebook.php';
 
 //include our class
-  require_once(dirname(__FILE__) . '/googleGeodecoder/class.googleGeodecoder.php'); 
+  //require_once(dirname(__FILE__) . '/googleGeodecoder/class.googleGeodecoder.php'); 
 
   //init our object
-  $geoDeco = new googleGeodecoder();
+  //$geoDeco = new googleGeodecoder();
 
 ?>
 
@@ -201,7 +201,7 @@ require_once 'fb-phpsdk/facebook.php';
     <?php if ($user){  ?>
       <?php
         //$currentUserLoc = $user_profile['location'];
-        $currentCoord = $geoDeco->getCoordinates($user_profile['location'] );
+        //$currentCoord = $geoDeco->getCoordinates($user_profile['location'] );
       ?>
       <script type="text/javascript">
           initialize();
@@ -209,7 +209,7 @@ require_once 'fb-phpsdk/facebook.php';
       
 
       <script type="text/javascript">
-          addMarker(<?php echo $currentCoord['lat']; ?>,<?php echo $currentCoord['lng']; ?>);
+          //addMarker(<?php echo $currentCoord['lat']; ?>,<?php echo $currentCoord['lng']; ?>);
           //$(document).ready(loadMarkers());
       </script>
 
