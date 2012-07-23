@@ -185,11 +185,12 @@ require_once 'fb-phpsdk/facebook.php';
           // }
   </script>
   <div class="header">
-    <p>Header <?php if ($user){ ?> 
+    <p>Header
+    	 <?php if ($user){ ?> 
         <span class="seperate"><img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
         <a href="<?php echo $logoutUrl; ?>" onmouseout='changecolout(this)' onmouseover='changecol(this)' style='color:#3a3b3b;font-size:0.5em;text-decoration:none' >Logout</a>
         </span>
-    <?php} ?> 
+    <?php } ?> 
     </p>
   </div>
 
