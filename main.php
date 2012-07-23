@@ -189,11 +189,7 @@ require_once 'fb-phpsdk/facebook.php';
         <span class="seperate"><img src="https://graph.facebook.com/<?php echo $user; ?>/picture">
         <a href="<?php echo $logoutUrl; ?>" onmouseout='changecolout(this)' onmouseover='changecol(this)' style='color:#3a3b3b;font-size:0.5em;text-decoration:none' >Logout</a>
         </span>
-    <?php  }else{ ?>
-        <script type="text/javascript">
-          window.location = '<?php echo "http://friendz.con:5000/fbfomdev/login.php" ?>';//"http://friendz.con:5000/fbfomdev/main.php";
-        </script>
-    <?php  } ?> 
+    <?php} ?> 
     </p>
   </div>
 
@@ -215,19 +211,11 @@ require_once 'fb-phpsdk/facebook.php';
           addMarker(<?php echo $currentCoord['lat']; ?>,<?php echo $currentCoord['lng']; ?>);
           $(document).ready(loadMarkers());
       </script>
-      <!--  
-        <h3>PHP Session</h3>
-        <pre><?php //print_r($user_profile['location']['name']) ; ?></pre>  
-        
-        
-        <pre><?php// print_r($_SESSION); ?></pre>
-        <h3>Your User Object (/me)</h3>
-        <pre><?php// print_r($user_profile); ?></pre>
-        -->
+
       <?php }else{ ?>
         
         <script type="text/javascript">
-          window.location = "http://friendz.con:5000/fbfomdev/login.php";
+          window.location = 'http://' + <?php echo $_SERVER['HTTP_HOST'] ?> +'/login.php';
         </script> 
         <p> </p>
       <?php } ?> 
