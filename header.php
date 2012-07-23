@@ -21,6 +21,12 @@ if($user){
   } 
 }
 
+$params2 = array(
+  'scope' => 'read_stream, user_location, friends_location',
+  'redirect_uri' => 'http://' . $_SERVER['HTTP_HOST'] .'/main.php'
+  );
+  $loginUrl = $facebook -> getLoginUrl($params2);
+
 if ($user){
   $params = array(
   'redirect_uri' => 'http://' . $_SERVER['HTTP_HOST'] .'/login.php'
@@ -28,11 +34,7 @@ if ($user){
   $logoutUrl = $facebook -> getLogoutUrl($params);
   //echo $logoutUrl;
 }else{
-  $params2 = array(
-  'scope' => 'read_stream, user_location, friends_location',
-  'redirect_uri' => 'http://' . $_SERVER['HTTP_HOST'] .'/main.php'
-  );
-  $loginUrl = $facebook -> getLoginUrl($params2);
+  
   //echo $loginUrl;
 }
 ?>
